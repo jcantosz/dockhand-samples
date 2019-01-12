@@ -1,0 +1,8 @@
+common:
+  images:
+    - boxboat/nginx
+build:
+  composeProfileMap:
+    dev: ./docker/dev
+  pullImages:
+    - nginx

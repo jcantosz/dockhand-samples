@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  nginx:
+    container_name: nginx-sample
+    ports:
+      - "80"
+    build:
+      context: ../../
+      dockerfile: ./docker/nginx/Dockerfile
+    image: boxboat/nginx:${GIT_COMMIT_SHORT_HASH:-docker}
