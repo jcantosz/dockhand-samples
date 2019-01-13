@@ -1,4 +1,4 @@
-@Library('jenkins-shared-library@master')
+@Library('dockhand@sample')
 import com.boxboat.jenkins.pipeline.build.*
 
 def build = new BoxBuild()
